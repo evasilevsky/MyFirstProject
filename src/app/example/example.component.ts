@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./example.component.css']
 })
 export class ExampleComponent implements OnInit {
-
+  private searchTerm: string;
   constructor() { }
 
   ngOnInit() {
   }
-
 }
