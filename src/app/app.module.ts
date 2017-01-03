@@ -13,6 +13,7 @@ import { BoxModelComponent } from './box-model/box-model.component';
 import { MultiColumnComponent } from './multi-column/multi-column.component';
 import { PersistenceComponent } from './persistence/persistence.component';
 import { HtmlComponent } from './html/html.component';
+import { FizzbuzzComponent } from './fizzbuzz/fizzbuzz.component';
 
 const appRoutes: Routes = [
   { path: 'example', component: ExampleComponent },
@@ -20,7 +21,10 @@ const appRoutes: Routes = [
   { path: 'multi-column', component: MultiColumnComponent }, 
   { path: 'persistence', component: PersistenceComponent },
   { path: 'html', component: HtmlComponent }, 
+  { path: 'fizzbuzz', component: FizzbuzzComponent}
+  
 ];
+
 
 @NgModule({
   declarations: [
@@ -32,7 +36,8 @@ const appRoutes: Routes = [
     BoxModelComponent,
     MultiColumnComponent,
     PersistenceComponent,
-    HtmlComponent
+    HtmlComponent,
+    FizzbuzzComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
